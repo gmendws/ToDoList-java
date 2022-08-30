@@ -15,7 +15,6 @@ public class Main {
         System.out.print("3.) Sair\n");
         System.out.print("\nSelecione uma opção: ");
 
-        try{
             while (true) {
                 choice = input.nextInt();
 
@@ -41,9 +40,5 @@ public class Main {
                 }
                 lista.getAllList();
             }
-        }
-        catch (Exception e){
-            System.out.println("Exception : " + e);    
-        }
     }
 }
