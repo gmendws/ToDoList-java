@@ -34,4 +34,8 @@ public class Lista {
         }
     }
 
+    public void setCheck(int index, String element) {
+        this.tarefa.set(index, element);
+    }
+
 }

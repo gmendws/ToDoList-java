@@ -1,5 +1,6 @@
 import model.Lista;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -30,14 +31,14 @@ public class Main {
                     case 2 -> {
                         System.out.println("\nDigite o n° da tarefa feita: ");
                         int opcao = input.nextInt();
-                        lista.getTarefa(opcao);
+                        lista.setCheck(opcao, "✓");
                         System.out.println("\nAdicionado tarefa: " + opcao + ".");
                     }
                     case 3 -> {
                         System.out.println("Saindo...");
                         System.exit(0);
                     }
-                    default -> System.out.println("Opção invalida! Tente outra novamente.");
+                    default -> System.out.println("Opção invalida!");
                 }
                 lista.getAllList();
             }
