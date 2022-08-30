@@ -32,7 +32,6 @@ public class Main {
                         System.out.println("\nDigite o n° da tarefa feita: ");
                         int opcao = input.nextInt();
                         lista.setCheck(opcao, "✓");
-                        System.out.println("\nAdicionado tarefa: " + opcao + ".");
                     }
                     case 3 -> {
                         System.out.println("Saindo...");
